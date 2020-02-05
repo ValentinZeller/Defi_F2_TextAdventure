@@ -13,13 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="../Pre-built.2 pthreads/include" />
 				</Compiler>
-				<Linker>
-					<Add library="../Pre-built.2 pthreads/lib/libpthreadGC2.a" />
-					<Add library="../Pre-built.2 pthreads/lib/libpthreadGCE2.a" />
-					<Add directory="../Pre-built.2 pthreads/lib" />
-				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/Sockets" prefix_auto="1" extension_auto="1" />
@@ -40,7 +34,6 @@
 		</Compiler>
 		<Linker>
 			<Add library="../../../../../CodeBlocks/MinGW/lib/libws2_32.a" />
-			<Add library="../Pre-built.2 pthreads/lib/libpthreadGC2.a" />
 			<Add directory="../Pre-built.2 pthreads/lib" />
 		</Linker>
 		<Unit filename="main.c">
